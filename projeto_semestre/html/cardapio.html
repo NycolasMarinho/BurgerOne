@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cardápio | Hamburgueria</title>
+  <link rel="stylesheet" href="css/cardapio.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="navegacao">
+      <div class="logo">🍔 Burger Power</div>
+      <ul class="nav-links">
+        <li><a href="inicial.html">Início</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+        <li><a href="contato.html">Fale Conosco</a></li>
+        <li><a href="sobrenos.html">Sobre Nós</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="cardapio">
+    <div class="conteudocardapio">
+      <h2>Nosso Cardápio</h2>
+      <p>Escolha o seu lanche favorito abaixo</p>
+    </div>
+  </section>
+
+  <h1 class="nossoslanches">Nossos Lanches</h1>
+  <section class="secao-cardapio-lanches">
+    <div class="itens-cardapio">
+      <div class="item">
+        <h3>🧀 Cheddar Bacon</h3>
+        <p>Para quem ama cheddar e bacon! Hambúrguer suculento de 150g com cheddar cremoso em abundância, tiras de bacon crocante, cebola crispy e nosso molho especial da casa. Tudo isso servido em um pão australiano macio, levemente adocicado, que realça o sabor dos ingredientes. Uma combinação intensa, irresistível e cheia de personalidade, ideal para os fãs de sabores fortes e marcantes.</p>
+        <span class="preco">R$ 26.90</span>
+        <button onclick="adicionarAoCarrinho('Cheddar Bacon', 26.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="item">
+        <h3>🍔 Classic Burguer</h3>
+        <p>A escolha perfeita para quem busca o sabor tradicional. Hambúrguer de 150g de carne bovina, queijo prato derretido, alface americana crocante, tomate fresco e nosso molho exclusivo. Montado em pão brioche macio, esse clássico é simples na medida certa e cheio de sabor. Ideal para quem prefere uma opção mais leve, mas ainda assim suculenta, deliciosa e feita com muito carinho.</p>
+        <span class="preco">R$ 22.90</span>
+        <button onclick="adicionarAoCarrinho('Classic Burguer', 22.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="item">
+        <h3>🎯 Duplo Smash</h3>
+        <p>Dois smash burgers de 120g cada, prensados na chapa para criar uma crosta caramelizada e irresistível. Cobertos com queijo cheddar na medida, bacon em tiras, cebola caramelizada e nossa maionese artesanal. Servido em pão brioche leve e tostado, esse hambúrguer é uma explosão de sabor e textura a cada mordida. Uma escolha perfeita para quem gosta de intensidade, suculência e crocância.</p>
+        <span class="preco">R$ 29.90</span>
+        <button onclick="adicionarAoCarrinho('Duplo Smash', 29.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="item">
+        <h3>🥬 Vegetariano</h3>
+        <p>Feito com hambúrguer vegetal de 160g, alface americana crocante, tomate fresco, cebola roxa, pepino em conserva e maionese vegana suave. Montado em pão de batata fofinho e dourado, essa opção agrada até quem não é vegetariano. Uma combinação leve, saborosa e bem equilibrada, perfeita para quem quer uma refeição consciente sem abrir mão do prazer de comer bem.</p>
+        <span class="preco">R$ 24.90</span>
+        <button onclick="adicionarAoCarrinho('Vegetariano', 24.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="item">
+        <h3>👑 X-Tudo Supremo</h3>
+        <p>O nome diz tudo: SUPREMO. Dois hambúrgueres de 150g, queijo prato derretido, presunto grelhado, bacon crocante com fartura, ovo frito, alface americana crocante, tomate fresco e batata palha para aquela experiência a mais. Tudo isso no nosso pão brioche tostado na manteiga. É mais que um lanche: é uma refeição completa e robusta, feita para quem quer matar a fome com muito sabor.</p>
+        <span class="preco">R$ 39.90</span>
+        <button onclick="adicionarAoCarrinho('X-Tudo Supremo', 39.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="item">
+        <h3>🔥 Cheddar Bacon Power</h3>
+        <p>Para quem ama cheddar em alto nível. Hambúrguer de 180g envolto em uma generosa camada de cheddar cremoso, bacon crocante em tiras fartas, cebola crispy e o molho especial da casa. Montado em pão australiano fresco, com leve toque adocicado. Um hambúrguer que impõe respeito, nosso Cheddar Bacon Power é cheio de sabor e perfeito para quem busca intensidade e uma experiência mais ousada.</p>
+        <span class="preco">R$ 35.90</span>
+        <button onclick="adicionarAoCarrinho('Cheddar Bacon Power', 35.90)">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </section>
+
+  <h1 class="nossosacompanhamentos">Nossos Acompanhamentos</h1>
+
+  <section class="secao-cardapio-complementos">
+    <div class="itens-cardapio-complementos">
+      <div class="itemcomplemento">
+        <h3>🍟 Batata Rústica</h3>
+        <p>Batatas cortadas com casca, temperadas com ervas finas e levemente apimentadas. Assadas até ficarem douradas por fora e macias por dentro. Acompanha um potinho do nosso molho especial da casa. É o equilíbrio ideal entre crocância e sabor, perfeito para acompanhar qualquer lanche e elevar ainda mais sua experiência gastronômica de forma simples, porém marcante.</p>
+        <span class="preco">R$ 18.90</span>
+        <button onclick="adicionarAoCarrinho('Batata Rústica', 18.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="itemcomplemento">
+        <h3>💛 Batata com Cheddar e Bacon</h3>
+        <p>Batatas fritas crocantes cobertas com cheddar cremoso e bacon em cubos crocante. Uma combinação clássica e irresistível, feita para compartilhar — ou não! Ideal para quem deseja um acompanhamento robusto, com textura e muito sabor. O contraste do queijo quente com o bacon salgado transforma cada mordida em puro prazer.</p>
+        <span class="preco">R$ 21.90</span>
+        <button onclick="adicionarAoCarrinho('Batata com Cheddar e Bacon', 21.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="itemcomplemento">
+        <h3>🧅 Onion Rings</h3>
+        <p>Anéis de cebola empanados com crocância extrema e um toque especial de tempero. Fritos na hora, são leves e dourados, perfeitos para petiscar. Servidos com molho barbecue ou maionese temperada. Uma opção divertida, saborosa e ideal para dividir ou complementar qualquer lanche do cardápio com estilo e muito sabor.</p>
+        <span class="preco">R$ 18.90</span>
+        <button onclick="adicionarAoCarrinho('Onion Rings', 18.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="itemcomplemento">
+        <h3>🧄 Maionese Artesanal</h3>
+        <p>Nossa maionese artesanal feita com ovos frescos, limão, alho suave e um toque de ervas. Cremosa, equilibrada e com sabor marcante, é perfeita para mergulhar batatas, onion rings ou até dar aquele “boost” no seu hambúrguer. Uma pequena porção que transforma sua refeição com um toque de exclusividade e carinho.</p>
+        <span class="preco">R$ 6.90</span>
+        <button onclick="adicionarAoCarrinho('Maionese Artesanal', 6.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="itemcomplemento">
+        <h3>🥓 Extra de Bacon</h3>
+        <p>Mais bacon, por favor! Acrescente uma porção extra de tiras de bacon crocantes e levemente defumadas ao seu lanche. Ideal para quem nunca acha bacon demais e quer uma experiência ainda mais saborosa. Feito na hora para garantir textura e aquele sabor inconfundível. Porque bacon nunca é demais, certo?</p>
+        <span class="preco">R$ 8.90</span>
+        <button onclick="adicionarAoCarrinho('Extra de Bacon', 8.90)">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div class="info-footer">
+        <p>&copy; 2025 Burger Power | Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+    function adicionarAoCarrinho(nome, preco) {
+  
+  const itemExistente = carrinho.find(item => item.nome === nome);
+  
+  if (itemExistente) {
+    
+    itemExistente.quantidade++;
+  } else {
+    
+    carrinho.push({ nome, preco, quantidade: 1 });
+  }
+
+  localStorage.setItem('carrinho', JSON.stringify(carrinho));
+  alert(nome + ' foi adicionado ao carrinho!');
+}
+  </script>
+
+</body>
+</html>

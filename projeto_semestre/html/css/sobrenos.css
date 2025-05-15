@@ -1,0 +1,182 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-color: wheat;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+
+header {
+  background-color: #300D0D;
+  color: wheat;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navegacao {
+  width: 92%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: wheat;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffe600;
+}
+
+
+.inicial {
+  background: linear-gradient(99deg, rgba(125, 51, 40, 1) 8%, rgba(82, 26, 26, 1) 49%, rgba(61, 26, 19, 1) 64%, rgba(48, 13, 13, 1) 83%);
+  height: 93vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.conteudoinicial {
+  color: wheat;
+  padding: 2rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.inicial h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.refsobrenos {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #000;
+  color: wheat;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.refsobrenos:hover {
+  background-color: #222;
+}
+
+
+.maispedidos {
+  background: wheat;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.osmaispedidos {
+  color: #300D0D;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.maispedidos p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+
+.promo-section {
+  background: linear-gradient(99deg, rgba(125, 51, 40, 1) 8%, rgba(82, 26, 26, 1) 49%, rgba(61, 26, 19, 1) 64%, rgba(48, 13, 13, 1) 83%);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.promocoes {
+  color: wheat;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.promo-section p {
+  color: wheat;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+
+.time {
+  background: wheat;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.atende {
+  color: #300D0D;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.membros {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.membro {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.membro:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 22px #300D0D;
+}
+
+.membro h3 {
+  color: #300D0D;
+  margin-bottom: 0.5rem;
+}
+
+.membro p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 0.9rem;
+}
