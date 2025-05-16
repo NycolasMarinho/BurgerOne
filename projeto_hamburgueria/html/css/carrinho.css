@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: wheat;
+    color: #333;
+    line-height: 1.6;
+  }
+
+
+ header {
+    background-color: #300D0D;
+    color: wheat;
+    padding: 1rem 0;
+  }
+
+ .navegacao {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Fredoka', sans-serif;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: wheat;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffe600;
+  }
+
+
+
+#carrinho {
+    background: linear-gradient(99deg, rgba(125, 51, 40, 1) 8%, rgba(82, 26, 26, 1) 49%, rgba(61, 26, 19, 1) 64%, rgba(48, 13, 13, 1) 83%);
+    margin: 3rem auto;
+    width: 80%;
+    max-width: 900px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#carrinho h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: wheat;
+    margin-bottom: 1.5rem;
+}
+
+#cart-items {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#cart-items li span {
+    font-weight: bold;
+    color: #2d3436;
+}
+
+#cart-items li .item-remove {
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#cart-items li .item-remove:hover {
+    background-color: #e84141;
+}
+
+
+#cart-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: right;
+    color: wheat;
+}
+
+#cart-total span {
+    font-size: 1.5rem;
+    color: wheat;
+}
+
+
+#checkout-button {
+    background-color: #2d3436;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#checkout-button:hover {
+    background-color: #ffe600;
+    color: #2d3436;
+}
+
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
